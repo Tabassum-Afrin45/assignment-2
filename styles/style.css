@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1440px;
+    margin:0 Auto;
+    /* border: 2px solid greenyellow; */
+}
+
+/*Shared style  */
+.text-color{
+    color: #8987A1;
+}
+
+/* Navigation bar Style */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid rgb(254, 90, 90); */
+}
+.logo img{
+    width: 100%;
+    width: 150px;
+    height: 90px;
+    margin: 30px 150px 120px 150px;
+    /* border: 2px solid rgb(254, 90, 90); */
+}
+.menu-items{
+    display:flex ;
+    align-items: center;
+    gap: 48px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #252432;
+    margin: 46px 115px 150px 120px;
+    /* border: 2px solid rgb(254, 90, 90); */
+}
+#item-1{
+    font-weight: bold;
+}
+.menu-items li{
+    list-style: none;
+    padding: 22px 0;
+}
+
+/* For Iphone */
+@media screen and (max-width:576px){
+    .menu-items>.hide{
+    display: none;
+    }
+
+    .navbar{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .logo img{
+    width: 100%;
+    height: 50%;
+    margin: 0;
+}
+.menu-items{
+    font-size: 20px;
+    margin: 7px 0;
+}
+}

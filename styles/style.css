@@ -10,6 +10,28 @@ body{
 }
 
 /*Shared style  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.text-primary{
+    color: rgba(0, 0, 0, 0.5);
+}
+.text-secondary{
+    color: #E95A08;
+}
 .text-color{
     color: #8987A1;
 }
@@ -19,24 +41,21 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 2px solid rgb(254, 90, 90); */
 }
 .logo img{
     width: 100%;
     width: 150px;
     height: 90px;
     margin: 30px 150px 120px 150px;
-    /* border: 2px solid rgb(254, 90, 90); */
 }
 .menu-items{
     display:flex ;
     align-items: center;
     gap: 48px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     color: #252432;
-    margin: 46px 115px 150px 120px;
-    /* border: 2px solid rgb(254, 90, 90); */
+    margin: 46px 115px 150px 120px;   
 }
 #item-1{
     font-weight: bold;
@@ -46,12 +65,38 @@ body{
     padding: 22px 0;
 }
 
+/* Banner Style */
+.banner-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left:150px;
+    margin-right: 120px;
+}
+.banner-details{
+    max-width: 570px;
+    padding-top: 162px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.banner-description{
+    font-size: 1.38rem;
+    margin-top: 13px;
+}
+.banner-img img{
+    width: 100%;
+    height: 355px;
+    margin-top:50px;
+}
+
+
 /* For Iphone */
 @media screen and (max-width:576px){
+ /* navigation */
     .menu-items>.hide{
     display: none;
     }
-
     .navbar{
         margin-left: 16px;
         margin-right: 16px;
@@ -62,7 +107,34 @@ body{
     margin: 0;
 }
 .menu-items{
-    font-size: 20px;
     margin: 7px 0;
 }
+/* banner */
+
+.banner-container{
+    grid-template-columns:1fr;
+    gap: 28px;
+    margin: 0;
+}
+.banner-details{
+    order: 2;
+    padding-top: 0px;
+    margin-left:16px;
+    margin-right:16px;
+}
+.banner-title{
+    font-size: 1.5rem;
+}
+.banner-description{
+    font-size: 1rem;
+}
+.banner-img{
+    order: 1;
+}
+.banner-img img{
+    width: 100%;
+    height: auto;
+    margin-top:28px;
+}
+
 }

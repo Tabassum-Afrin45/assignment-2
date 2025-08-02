@@ -44,6 +44,10 @@ body{
     border: none;
 }
 
+.mobile-icons{
+     display: none;
+}
+
 /* Navigation bar Style */
 .navbar{
     display: flex;
@@ -291,11 +295,19 @@ form{
     width: 100%;
     width: 135px;
     height: 82px;
-}
+}     
 
-/* For Iphone */
+/* For iphone */
 @media screen and (max-width:576px){
- /* navigation */
+   .mobile-icons{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top:25px;
+        margin-bottom: 30px;
+     }
+
+    /* navigation */
     .menu-items>.hide{
     display: none;
     }

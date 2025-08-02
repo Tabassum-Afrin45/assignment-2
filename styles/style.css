@@ -223,7 +223,36 @@ form{
     margin-top: 0;
 }
 
-
+/* Footer Section */
+.footer-style{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1440px;
+    height: auto;
+    margin: 30px 160px;
+    align-items:baseline;
+    justify-items:center;
+    font-size: 1.25rem;
+}
+.sec-2 li,.sec-3 li{
+    list-style: none;
+    margin-bottom: 26px;
+}
+.sec-4{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+.sec-1{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.sec-1 img{
+    width: 100%;
+    width: 135px;
+    height: 82px;
+}
 
 /* For Iphone */
 @media screen and (max-width:576px){
@@ -322,6 +351,9 @@ form{
 }
 
 /* join Section */
+.join-section{
+   height: 400px;
+}
 .join-title{
     font-size:2rem;
 }
@@ -331,6 +363,12 @@ form{
 .join-section button{
     width: 50%;
 }
+/* Footer */
+.footer-style{
+    grid-template-columns:1fr;
+    text-align: left;
+    margin: 50px 20px;
+    justify-items: start;
 
-
+}
 }

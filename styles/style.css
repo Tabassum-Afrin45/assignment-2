@@ -104,6 +104,7 @@ body{
     margin-left:150px;
     margin-right: 120px;
     margin-top: 120px;
+    margin-bottom: 100px;
 }
 .card-info{
     text-align: center;
@@ -131,6 +132,41 @@ body{
     text-align: center;
 }
 
+/* Plant Lovers Section */
+.plant-lovers{
+    max-width: 1140px;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin: 0 auto;
+}
+.plant-image{
+    width: 50%;
+}
+.plant-image #flower-cutting{
+    width: 100%;
+    height: auto;
+}
+.plant-image .trusted-logo{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: 1930px;
+    left: 600px;
+}
+.plant-info{
+    width: 50%;
+}
+.plant-title{
+    font-size: 3.125rem;
+}
+.plant-description{
+    font-size: 1.38rem;
+}
+.plant-description li{
+    margin-top: 20px;
+}
+
 
 /* For Iphone */
 @media screen and (max-width:576px){
@@ -150,8 +186,8 @@ body{
 .menu-items{
     margin: 7px 0;
 }
-/* banner */
 
+/* banner */
 .banner-container{
     grid-template-columns:1fr;
     gap: 28px;
@@ -164,6 +200,7 @@ body{
     margin-right:16px;
 }
 .banner-title{
+    margin-top: 15px;
     font-size: 1.5rem;
 }
 .banner-description{
@@ -183,6 +220,7 @@ body{
    margin-top: 65px;
    margin-left:16px;
    margin-right: 16px;
+   margin-bottom: 20px;
 }
 .card-title{
     font-size: 1.40rem;
@@ -203,5 +241,26 @@ body{
     padding: 5px 10px;
     font-size: 1rem;
     width: 100%;
+}
+/* plants-lover */
+.plant-lovers{
+    flex-direction: column;
+    margin-left:16px;
+    margin-right: 16px;
+    gap: 10px;
+}
+.plant-image{
+    width: 100%;
+
+}
+.plant-info{
+    width: 100%;     
+}
+.plant-description{
+    padding-left:16px;
+    padding-right: 16px;
+}
+.plant-image .trusted-logo{
+    display: none;
 }
 }

@@ -167,6 +167,63 @@ body{
     margin-top: 20px;
 }
 
+/*Deals Section*/
+.Deals{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.deals-info{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom:50px;
+}
+.deals-title{
+    font-size: 3.125rem;
+    margin-bottom: 15px;
+}
+.deals-description{
+    max-width: 850px;
+    font-size: 1.38rem;
+    margin: 0 auto;
+}
+.deals-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr 2fr);
+    gap: 50px;
+    /* width: 100%;
+    height: auto; */
+}
+
+/* Join Section */
+.join-section{
+    background-image:url(../images/news-letter-bg.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 535px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.join-title{
+    color: white;
+    font-size: 3.125rem;
+    margin-bottom: 23px;
+}
+form{
+    display: flex;
+}
+.join-section input{
+    padding: 8px 100px;
+    width: 100%;
+}
+.join-section button{
+    padding: 8px 20px;
+    margin-top: 0;
+}
+
+
 
 /* For Iphone */
 @media screen and (max-width:576px){
@@ -263,4 +320,17 @@ body{
 .plant-image .trusted-logo{
     display: none;
 }
+
+/* join Section */
+.join-title{
+    font-size:2rem;
+}
+.join-section input{
+    padding:8px 20px;
+}
+.join-section button{
+    width: 50%;
+}
+
+
 }
